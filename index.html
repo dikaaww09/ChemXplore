@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChemXplore - Explore the World of Elements</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ChemXplore</h1>
+            <p>Explore the World of Elements</p>
+        </header>
+
+        <main class="main-content">
+            <section >
+                <div class="periodic-table-section">
+                <div class="periodic-table" id="periodicTable">
+                    <!-- Tabel periodik akan di-generate oleh JavaScript -->
+                </div>
+</div>
+        <!-- Legenda Warna Kategori Unsur -->
+<div class="color-legend">
+    <h3>Kategori Unsur</h3>
+    <div class="legend-items">
+        <div class="legend-item">
+            <div class="color-box alkali-metal"></div>
+            <span>Logam Alkali</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box alkaline-earth"></div>
+            <span>Logam Alkali Tanah</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box transition-metal"></div>
+            <span>Logam Transisi</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box post-transition"></div>
+            <span>Logam Pasca-transisi</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box metalloid"></div>
+            <span>Metaloid</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box non-metal"></div>
+            <span>Non-logam</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box halogen"></div>
+            <span>Halogen</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box noble-gas"></div>
+            <span>Gas Mulia</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box lanthanide"></div>
+            <span>Lantanida</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box actinide"></div>
+            <span>Aktinida</span>
+        </div>
+    </div>
+</div>
+            </section>
+
+            <section class="info-panel">
+                <div class="element-info" id="elementInfo">
+                    <div class="info-header">
+                        <h2>Informasi & Hasil Campuran</h2>
+                    </div>
+                    <div class="info-content">
+                        <div class="welcome-message" id="welcomeMessage">
+                            <h3>Selamat Datang di ChemXplore </h3>
+                            <p>Klik salah satu unsur di tabel untuk melihat penjelasan, atau pilih dua unsur untuk mencampurkannya!</p>
+                        </div>
+                        <div class="element-details" id="elementDetails" style="display: none;">
+                            <div class="element-symbol-large" id="elementSymbolLarge"></div>
+                            <div class="element-name" id="elementName"></div>
+                            <div class="element-number" id="elementNumber"></div>
+                            <div class="element-category" id="elementCategory"></div>
+                            <div class="element-description" id="elementDescription"></div>
+                            <div class="element-image" id="elementImage"></div>
+                        </div>
+                        <div class="reaction-result" id="reactionResult" style="display: none;">
+                            <h3 id="reactionTitle"></h3>
+                            <div class="reaction-formula" id="reactionFormula"></div>
+                            <div class="reaction-description" id="reactionDescription"></div>
+                            <div class="reaction-image" id="reactionImage"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mixing-panel">
+                    <h3>Campur Unsur</h3>
+                    <div class="substance-selectors">
+                        <div class="substance-selector">
+                            <label>zat-1</label>
+                            <div class="substance-slot" id="substance1">Pilih unsur pertama...</div>
+                        </div>
+                        <div class="substance-selector">
+                            <label>zat-2</label>
+                            <div class="substance-slot" id="substance2">Pilih unsur kedua...</div>
+                        </div>
+                    </div>
+                    <button class="mix-btn" id="mixBtn" disabled>CAMPUR </button>
+                    <button class="reset-btn" id="resetBtn">Reset</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p class="disclaimer">Simulasi — jangan dicoba di dunia nyata</p>
+            <p>* Dika S.P & Erlangga S.P</p>
+        </footer>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
