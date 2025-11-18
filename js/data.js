@@ -1,18 +1,20 @@
-// Data lengkap unsur-unsur kimia (118 unsur)
+// =========================================================================
+// BAGIAN 1: DATA UNSUR KIMIA (118 Unsur) - SUDAH DIPERBAIKI
+// =========================================================================
 const elements = [
     // Periode 1
     { symbol: "H", name: "Hidrogen", number: 1, category: "Non-logam", color: "non-metal", desc: "Unsur paling ringan dan melimpah di alam semesta. Gas tidak berwarna, tidak berbau, dan sangat mudah terbakar.", image: "🚀" },
     { symbol: "He", name: "Helium", number: 2, category: "Gas Mulia", color: "noble-gas", desc: "Gas mulia paling ringan. Tidak berwarna, tidak berbau, tidak mudah terbakar, dan digunakan untuk balon.", image: "🎈" },
 
     // Periode 2
-    { symbol: "Li", name: "Litium", number: 3, category: "Logam Alkali", color: "alkali-metal", desc: "Logam alkali paling ringan. Lunak, putih keperakan, dan digunakan dalam baterai lithium-ion.", image: "🔋" },
+    { symbol: "Li", name: "Litium", number: 3, category: "Logam Alkali", color: "alkali-metal", desc: "Logam alkali paling ringan. Lunak, putih keperakan, dan digunakan dalam baterai litium-ion.", image: "🔋" },
     { symbol: "Be", name: "Berilium", number: 4, category: "Logam Alkali Tanah", color: "alkaline-earth", desc: "Logam alkali tanah yang ringan namun kuat. Digunakan dalam aerospace dan aplikasi nuklir.", image: "✈️" },
     { symbol: "B", name: "Boron", number: 5, category: "Metaloid", color: "metalloid", desc: "Metaloid dengan sifat antara logam dan non-logam. Penting untuk produksi kaca dan keramik.", image: "🔸" },
     { symbol: "C", name: "Karbon", number: 6, category: "Non-logam", color: "non-metal", desc: "Dasar kehidupan organik. Memiliki beberapa alotrop termasuk grafit, intan, dan graphene.", image: "💎" },
     { symbol: "N", name: "Nitrogen", number: 7, category: "Non-logam", color: "non-metal", desc: "Menyusun 78% atmosfer Bumi. Gas tidak berwarna, tidak berbau, penting untuk kehidupan.", image: "🌬️" },
     { symbol: "O", name: "Oksigen", number: 8, category: "Non-logam", color: "non-metal", desc: "Esensial untuk respirasi makhluk hidup. Menyusun 21% atmosfer dan paling melimpah di kerak Bumi.", image: "💨" },
-    { symbol: "F", name: "Fluor", number: 9, category: "Halogen", color: "halogen", desc: "Halogen paling reaktif. Gas kuning pucat yang sangat korosif dan beracun.", image: "⚠️" }, // Diperbarui
-    { symbol: "Ne", name: "Neon", number: 10, category: "Gas Mulia", color: "noble-gas", desc: "Gas mulia paling ringan. Tidak berwarna, tidak berbau, tidak mudah terbakar, dan digunakan untuk balon.", image: "🎈" },
+    { symbol: "F", name: "Fluor", number: 9, category: "Halogen", color: "halogen", desc: "Halogen paling reaktif. Gas kuning pucat yang sangat korosif dan beracun.", image: "⚠️" },
+    { symbol: "Ne", name: "Neon", number: 10, category: "Gas Mulia", color: "noble-gas", desc: "Gas mulia yang digunakan dalam lampu neon. Tidak berwarna dan tidak reaktif.", image: "💡" },
 
     // Periode 3
     { symbol: "Na", name: "Natrium", number: 11, category: "Logam Alkali", color: "alkali-metal", desc: "Logam alkali yang lunak dan sangat reaktif. Komponen utama garam dapur (NaCl).", image: "🧂" },
@@ -21,7 +23,7 @@ const elements = [
     { symbol: "Si", name: "Silikon", number: 14, category: "Metaloid", color: "metalloid", desc: "Metaloid kedua paling melimpah. Dasar industri semikonduktor dan elektronik.", image: "💻" },
     { symbol: "P", name: "Fosfor", number: 15, category: "Non-logam", color: "non-metal", desc: "Non-logam yang penting untuk DNA dan energi sel. Memiliki beberapa alotrop.", image: "🧬" },
     { symbol: "S", name: "Belerang", number: 16, category: "Non-logam", color: "non-metal", desc: "Non-logam kuning yang penting untuk industri dan biologi. Berbau khas.", image: "🟨" },
-    { symbol: "Cl", name: "Klor", number: 17, category: "Halogen", color: "halogen", desc: "Gas halogen hijau kekuningan yang sangat reaktif. Digunakan untuk pemurnian air.", image: "💧" }, // Diperbarui
+    { symbol: "Cl", name: "Klor", number: 17, category: "Halogen", color: "halogen", desc: "Gas halogen hijau kekuningan yang sangat reaktif. Digunakan untuk pemurnian air.", image: "💧" },
     { symbol: "Ar", name: "Argon", number: 18, category: "Gas Mulia", color: "noble-gas", desc: "Gas mulia paling melimpah di atmosfer Bumi. Digunakan dalam pengelasan dan lampu.", image: "💠" },
 
     // Periode 4
@@ -30,10 +32,10 @@ const elements = [
     { symbol: "Sc", name: "Skandium", number: 21, category: "Logam Transisi", color: "transition-metal", desc: "Logam transisi ringan yang langka. Digunakan dalam lampu hemat energi.", image: "💡" },
     { symbol: "Ti", name: "Titanium", number: 22, category: "Logam Transisi", color: "transition-metal", desc: "Logam kuat, ringan, dan tahan korosi. Digunakan dalam aerospace dan implan medis.", image: "✈️" },
     { symbol: "V", name: "Vanadium", number: 23, category: "Logam Transisi", color: "transition-metal", desc: "Logam transisi yang keras. Digunakan untuk memperkuat baja.", image: "🛡️" },
-    { symbol: "Cr", name: "Kromium", number: 24, category: "Logam Transisi", color: "transition-metal", desc: "Logam mengilap tahan karat. Digunakan untuk pelapis chrome dan stainless steel.", image: "✨" },
+    { symbol: "Cr", name: "Kromium", number: 24, category: "Logam Transisi", color: "transition-metal", desc: "Logam mengilap tahan karat. Digunakan untuk pelapis krom dan stainless steel.", image: "✨" },
     { symbol: "Mn", name: "Mangan", number: 25, category: "Logam Transisi", color: "transition-metal", desc: "Logam penting untuk produksi baja dan baterai alkaline.", image: "⚙️" },
     { symbol: "Fe", name: "Besi", number: 26, category: "Logam Transisi", color: "transition-metal", desc: "Logam transisi penting untuk hemoglobin dan industri. Dapat berkarat.", image: "🛠️" },
-    { symbol: "Co", name: "Kobalt", number: 27, category: "Logam Transisi", color: "transition-metal", desc: "Logam untuk baterai lithium-ion dan pigmen biru.", image: "🔋" },
+    { symbol: "Co", name: "Kobalt", number: 27, category: "Logam Transisi", color: "transition-metal", desc: "Logam untuk baterai litium-ion dan pigmen biru.", image: "🔋" },
     { symbol: "Ni", name: "Nikel", number: 28, category: "Logam Transisi", color: "transition-metal", desc: "Logam untuk pelapis anti-karat dan baterai nikel-kadmium.", image: "🪙" },
     { symbol: "Cu", name: "Tembaga", number: 29, category: "Logam Transisi", color: "transition-metal", desc: "Logam transisi dengan konduktivitas tinggi. Digunakan untuk kabel dan koin.", image: "🔌" },
     { symbol: "Zn", name: "Seng", number: 30, category: "Logam Transisi", color: "transition-metal", desc: "Logam transisi penting untuk sistem kekebalan dan pelapis anti-karat.", image: "🛡️" },
@@ -41,7 +43,7 @@ const elements = [
     { symbol: "Ge", name: "Germanium", number: 32, category: "Metaloid", color: "metalloid", desc: "Metaloid penting untuk elektronik awal dan serat optik.", image: "🔍" },
     { symbol: "As", name: "Arsen", number: 33, category: "Metaloid", color: "metalloid", desc: "Metaloid beracun yang digunakan dalam pestisida dan elektronik.", image: "☠️" },
     { symbol: "Se", name: "Selenium", number: 34, category: "Non-logam", color: "non-metal", desc: "Non-logam penting untuk enzim antioksidan dan fotosel.", image: "☀️" },
-    { symbol: "Br", name: "Brom", number: 35, category: "Halogen", color: "halogen", desc: "Satu-satunya halogen cair. Cairan merah tua yang mudah menguap.", image: "🧪" }, // Diperbarui
+    { symbol: "Br", name: "Brom", number: 35, category: "Halogen", color: "halogen", desc: "Satu-satunya halogen cair. Cairan merah tua yang mudah menguap.", image: "🧪" },
     { symbol: "Kr", name: "Kripton", number: 36, category: "Gas Mulia", color: "noble-gas", desc: "Gas mulia digunakan dalam lampu kilat fotografi dan laser.", image: "📸" },
 
     // Periode 5
@@ -53,7 +55,7 @@ const elements = [
     { symbol: "Mo", name: "Molibdenum", number: 42, category: "Logam Transisi", color: "transition-metal", desc: "Logam penting untuk kekuatan baja dan enzim biologis.", image: "⚙️" },
     { symbol: "Tc", name: "Teknesium", number: 43, category: "Logam Transisi", color: "transition-metal", desc: "Unsur radioaktif buatan pertama. Digunakan dalam pencitraan medis.", image: "🏥" },
     { symbol: "Ru", name: "Rutenium", number: 44, category: "Logam Transisi", color: "transition-metal", desc: "Logam langka digunakan dalam elektronik dan katalis.", image: "💎" },
-    { symbol: "Rh", name: "Rodium", number: 45, category: "Logam Transisi", color: "transition-metal", desc: "Logam mulia langka digunakan dalam katalis converter mobil.", image: "🚗" },
+    { symbol: "Rh", name: "Rodium", number: 45, category: "Logam Transisi", color: "transition-metal", desc: "Logam mulia langka digunakan dalam katalis konverter mobil.", image: "🚗" },
     { symbol: "Pd", name: "Paladium", number: 46, category: "Logam Transisi", color: "transition-metal", desc: "Logam mulia digunakan dalam katalis dan perhiasan putih.", image: "💍" },
     { symbol: "Ag", name: "Perak", number: 47, category: "Logam Transisi", color: "transition-metal", desc: "Logam mulia dengan konduktivitas tertinggi. Digunakan untuk perhiasan dan elektronik.", image: "💍" },
     { symbol: "Cd", name: "Kadmium", number: 48, category: "Logam Transisi", color: "transition-metal", desc: "Logam beracun digunakan dalam baterai dan pigmen.", image: "🔋" },
@@ -61,7 +63,7 @@ const elements = [
     { symbol: "Sn", name: "Timah", number: 50, category: "Logam Pasca-transisi", color: "post-transition", desc: "Logam digunakan untuk solder, pelapis kaleng, dan perunggu.", image: "🥫" },
     { symbol: "Sb", name: "Antimon", number: 51, category: "Metaloid", color: "metalloid", desc: "Metaloid digunakan dalam tahanan api dan baterai.", image: "🔥" },
     { symbol: "Te", name: "Telurium", number: 52, category: "Metaloid", color: "metalloid", desc: "Metaloid digunakan dalam panel surya dan CD rewritable.", image: "💿" },
-    { symbol: "I", name: "Iodin", number: 53, category: "Halogen", color: "halogen", desc: "Halogen padat penting untuk hormon tiroid dan disinfektan.", image: "🩺" }, // Diperbarui
+    { symbol: "I", name: "Iodin", number: 53, category: "Halogen", color: "halogen", desc: "Halogen padat penting untuk hormon tiroid dan disinfektan.", image: "🩺" },
     { symbol: "Xe", name: "Xenon", number: 54, category: "Gas Mulia", color: "noble-gas", desc: "Gas mulia digunakan dalam lampu sorot dan anestesi.", image: "💡" },
 
     // Periode 6
@@ -81,14 +83,14 @@ const elements = [
     { symbol: "Pb", name: "Timbal", number: 82, category: "Logam Pasca-transisi", color: "post-transition", desc: "Logam berat yang lunak dan mudah dibentuk. Beracun dan dulu digunakan untuk pipa.", image: "⚖️" },
     { symbol: "Bi", name: "Bismut", number: 83, category: "Logam Pasca-transisi", color: "post-transition", desc: "Logam berat dengan toksisitas rendah. Digunakan dalam kosmetik dan obat.", image: "💄" },
     { symbol: "Po", name: "Polonium", number: 84, category: "Metaloid", color: "metalloid", desc: "Metaloid radioaktif sangat beracun. Digunakan dalam sumber neutron.", image: "☢️" },
-    { symbol: "At", name: "Astatin", number: 85, category: "Halogen", color: "halogen", desc: "Halogen radioaktif paling langka di kerak Bumi.", image: "⚛️" }, // Diperbarui
+    { symbol: "At", name: "Astatin", number: 85, category: "Halogen", color: "halogen", desc: "Halogen radioaktif paling langka di kerak Bumi.", image: "⚛️" },
     { symbol: "Rn", name: "Radon", number: 86, category: "Gas Mulia", color: "noble-gas", desc: "Gas mulia radioaktif yang dapat menyebabkan kanker paru-paru.", image: "🏚️" },
 
     // Periode 7
     { symbol: "Fr", name: "Fransium", number: 87, category: "Logam Alkali", color: "alkali-metal", desc: "Logam alkali radioaktif paling langka dan tidak stabil.", image: "⚛️" },
     { symbol: "Ra", name: "Radium", number: 88, category: "Logam Alkali Tanah", color: "alkaline-earth", desc: "Logam alkali tanah radioaktif. Dulu digunakan dalam cat bercahaya.", image: "✨" },
     { symbol: "Ac", name: "Aktinium", number: 89, category: "Aktinida", color: "actinide", desc: "Unsur pertama aktinida. Radioaktif dan digunakan dalam sumber neutron.", image: "⚛️" },
-    { symbol: "Rf", name: "Ruterfordium", number: 104, category: "Logam Transisi", color: "transition-metal", desc: "Unsur transisisi superberat sintetis.", image: "⚛️" },
+    { symbol: "Rf", name: "Ruterfordium", number: 104, category: "Logam Transisi", color: "transition-metal", desc: "Unsur transisi superberat sintetis.", image: "⚛️" },
     { symbol: "Db", name: "Dubnium", number: 105, category: "Logam Transisi", color: "transition-metal", desc: "Unsur sintetis sangat radioaktif dengan waktu paruh pendek.", image: "⚛️" },
     { symbol: "Sg", name: "Seaborgium", number: 106, category: "Logam Transisi", color: "transition-metal", desc: "Unsur sintetis dinamai dari Glenn T. Seaborg.", image: "👨‍🔬" },
     { symbol: "Bh", name: "Bohrium", number: 107, category: "Logam Transisi", color: "transition-metal", desc: "Unsur sintetis dinamai dari Niels Bohr.", image: "👨‍🔬" },
@@ -101,11 +103,11 @@ const elements = [
     { symbol: "Fl", name: "Flerovium", number: 114, category: "Logam Pasca-transisi", color: "post-transition", desc: "Unsur sintetis superberat.", image: "⚛️" },
     { symbol: "Mc", name: "Moscovium", number: 115, category: "Logam Pasca-transisi", color: "post-transition", desc: "Unsur sintetis dinamai dari Moscow.", image: "🇷🇺" },
     { symbol: "Lv", name: "Livermorium", number: 116, category: "Logam Pasca-transisi", color: "post-transition", desc: "Unsur sintetis dinamai dari Lawrence Livermore National Laboratory.", image: "🔬" },
-    { symbol: "Ts", name: "Tenesin", number: 117, category: "Halogen", color: "halogen", desc: "Halogen sintetis superberat.", image: "⚛️" }, // Diperbarui
+    { symbol: "Ts", name: "Tenesin", number: 117, category: "Halogen", color: "halogen", desc: "Halogen sintetis superberat.", image: "⚛️" },
     { symbol: "Og", name: "Oganeson", number: 118, category: "Gas Mulia", color: "noble-gas", desc: "Unsur sintetis terberat, dinamai dari Yuri Oganessian.", image: "👨‍🔬" },
 
     // Lantanida (Z=58 sampai Z=71)
-    { symbol: "Ce", name: "Serium", number: 58, category: "Lantanida", color: "lanthanide", desc: "Lantanida paling melimpah. Digunakan dalam katalis converter.", image: "🚗" },
+    { symbol: "Ce", name: "Serium", number: 58, category: "Lantanida", color: "lanthanide", desc: "Lantanida paling melimpah. Digunakan dalam katalis konverter.", image: "🚗" },
     { symbol: "Pr", name: "Praseodimium", number: 59, category: "Lantanida", color: "lanthanide", desc: "Lantanida digunakan dalam magnet kuat dan kaca khusus.", image: "🧲" },
     { symbol: "Nd", name: "Neodimium", number: 60, category: "Lantanida", color: "lanthanide", desc: "Lantanida untuk magnet neodimium yang sangat kuat.", image: "🧲" },
     { symbol: "Pm", name: "Prometium", number: 61, category: "Lantanida", color: "lanthanide", desc: "Lantanida radioaktif digunakan dalam baterai nuklir.", image: "⚛️" },
@@ -137,9 +139,26 @@ const elements = [
     { symbol: "Lr", name: "Lawrensium", number: 103, category: "Aktinida", color: "actinide", desc: "Aktinida terakhir. Dinamai dari Ernest Lawrence.", image: "👨‍🔬" }
 ];
 
-// Data reaksi kimia lengkap
+// Layout tabel periodik LENGKAP (118 Unsur)
+const periodicTableLayout = [
+    [1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 2],
+    [3, 4, null, null, null, null, null, null, null, null, null, null, 5, 6, 7, 8, 9, 10],
+    [11, 12, null, null, null, null, null, null, null, null, null, null, 13, 14, 15, 16, 17, 18],
+    [19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36],
+    [37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54],
+    [55, 56, 57, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86],
+    [87, 88, 89, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118],
+    [null, null, null, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, null],
+    [null, null, null, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, null]
+];
+
+// =========================================================================
+// BAGIAN 2: DATA REAKSI KIMIA (SUDAH DIPERBAIKI)
+// =========================================================================
+
+// Data reaksi kimia yang sudah DIBERSIHKAN (HANYA 2 UNSUR)
 const reactions = {
-    // ==================== REAKSI DASAR & AMAN ====================
+    // ==================== REAKSI AIR & HIDROGEN ====================
     "H+O": {
         result: "Air",
         formula: "H₂O",
@@ -147,112 +166,411 @@ const reactions = {
         image: "💧",
         safety: "safe"
     },
-    "H+Cl": {
-        result: "Asam Klorida", 
-        formula: "HCl",
-        desc: "Hidrogen dan Klor membentuk asam klorida, asam kuat yang digunakan dalam industri.",
-        image: "🧪",
-        safety: "warning"
-    },
-    "Na+Cl": {
-        result: "Garam Dapur",
-        formula: "NaCl", 
-        desc: "Natrium dan Klor bereaksi membentuk natrium klorida, atau garam dapur.",
-        image: "🧂",
-        safety: "safe"
-    },
+
+    // ==================== REAKSI OKSIDA ====================
     "C+O": {
         result: "Karbon Dioksida",
         formula: "CO₂",
-        desc: "Karbon dan Oksigen membentuk karbon dioksida, gas rumah kaca penting.",
+        desc: "Gas rumah kaca yang penting untuk fotosintesis.",
         image: "🌫️",
         safety: "safe"
     },
-    "C+H": {
-        result: "Metana",
-        formula: "CH₄",
-        desc: "Karbon dan Hidrogen membentuk metana, gas alam utama.",
+    "C+O2": {
+        result: "Karbon Monoksida",
+        formula: "CO",
+        desc: "Gas beracun tak berwarna dan tak berbau. MEMATIKAN!",
+        image: "💀",
+        safety: "extreme"
+    },
+    "S+O": {
+        result: "Belerang Dioksida",
+        formula: "SO₂",
+        desc: "Gas penyebab hujan asam. Iritasi pernapasan.",
+        image: "🌋",
+        safety: "danger"
+    },
+    "N+O": {
+        result: "Nitrogen Oksida",
+        formula: "NO",
+        desc: "Gas beracun, prekursor hujan asam.",
+        image: "🏭",
+        safety: "danger"
+    },
+    "N+O2": {
+        result: "Nitrogen Dioksida",
+        formula: "NO₂",
+        desc: "Gas coklat beracun, iritasi paru-paru.",
+        image: "🌫️",
+        safety: "extreme"
+    },
+    "P+O": {
+        result: "Fosfor Pentoksida",
+        formula: "P₂O₅",
+        desc: "Bahan pengering kuat, bereaksi hebat dengan air.",
         image: "🔥",
         safety: "danger"
     },
-
-    // ==================== REAKSI LOGAM ====================
-    "Fe+O": {
-        result: "Karat Besi",
-        formula: "Fe₂O₃",
-        desc: "Besi bereaksi dengan oksigen membentuk karat (besi oksida).",
-        image: "🦠",
+    "Si+O": {
+        result: "Silikon Dioksida",
+        formula: "SiO₂",
+        desc: "Penyusun utama pasir dan kaca.",
+        image: "🏖️",
         safety: "safe"
     },
-    "Cu+O": {
-        result: "Tembaga Oksida", 
-        formula: "CuO",
-        desc: "Tembaga bereaksi dengan oksigen membentuk tembaga oksida hijau.",
-        image: "🏺",
-        safety: "safe"
-    },
-    "Al+O": {
-        result: "Aluminium Oksida",
-        formula: "Al₂O₃",
-        desc: "Aluminium membentuk lapisan oksida pelindung.",
-        image: "🛡️",
-        safety: "safe"
+    "Ca+O": {
+        result: "Kalsium Oksida",
+        formula: "CaO",
+        desc: "Kapur tohor, bereaksi eksotermik dengan air.",
+        image: "🏗️",
+        safety: "warning"
     },
     "Mg+O": {
         result: "Magnesium Oksida",
         formula: "MgO",
-        desc: "Magnesium terbakar dengan cahaya putih terang membentuk magnesium oksida.",
-        image: "💥",
+        desc: "Terbakar dengan cahaya putih terang. Blitzlicht fotografi.",
+        image: "📸",
+        safety: "danger"
+    },
+    "Ba+O": {
+        result: "Barium Oksida",
+        formula: "BaO",
+        desc: "Beracun, digunakan dalam kaca dan keramik.",
+        image: "⚗️",
+        safety: "danger"
+    },
+    "Sr+O": {
+        result: "Stronsium Oksida",
+        formula: "SrO",
+        desc: "Memberikan warna merah pada kembang api.",
+        image: "🎆",
         safety: "warning"
     },
-
-    // ==================== REAKSI HALOGEN ====================
-    "Na+F": {
-        result: "Natrium Fluorida",
-        formula: "NaF",
-        desc: "Digunakan dalam pasta gigi untuk mencegah gigi berlubang.",
-        image: "🦷",
-        safety: "warning"
-    },
-    "H+F": {
-        result: "Asam Fluorida",
-        formula: "HF",
-        desc: "Asam sangat korosif yang dapat melarutkan kaca. SANGAT BERBAHAYA!",
+    "Be+O": {
+        result: "Berilium Oksida",
+        formula: "BeO",
+        desc: "Konduktor panas excellent. BERACUN jika terhirup!",
         image: "☠️",
         safety: "extreme"
     },
-    "Ca+F": {
-        result: "Kalsium Fluorida",
-        formula: "CaF₂",
-        desc: "Mineral fluorit, sumber utama fluor.",
+    "Ra+O": {
+        result: "Radium Oksida",
+        formula: "RaO",
+        desc: "SANGAT RADIOAKTIF! Penyebab kematian Marie Curie.",
+        image: "☢️",
+        safety: "extreme"
+    },
+    "Fe+O": {
+        result: "Besi(III) Oksida",
+        formula: "Fe₂O₃",
+        desc: "Karat, proses korosi alami besi.",
+        image: "🦠",
+        safety: "safe"
+    },
+    "Cu+O": {
+        result: "Tembaga(II) Oksida",
+        formula: "CuO",
+        desc: "Patina hijau pada tembaga.",
+        image: "🏺",
+        safety: "safe"
+    },
+    "Zn+O": {
+        result: "Seng Oksida",
+        formula: "ZnO",
+        desc: "Salep kulit dan tabir surya.",
+        image: "🧴",
+        safety: "safe"
+    },
+    "Pb+O": {
+        result: "Timbal(II) Oksida",
+        formula: "PbO",
+        desc: "Beracun, digunakan dalam kaca dan keramik.",
+        image: "⚖️",
+        safety: "danger"
+    },
+    "Cd+O": {
+        result: "Kadmium Oksida",
+        formula: "CdO",
+        desc: "Beracun, karsinogenik. SANGAT BERBAHAYA!",
+        image: "💀",
+        safety: "extreme"
+    },
+    "Tl+O": {
+        result: "Talium(I) Oksida",
+        formula: "Tl₂O",
+        desc: "Racun tikus yang sangat efektif. MEMATIKAN!",
+        image: "🐀",
+        safety: "extreme"
+    },
+    "As+O": {
+        result: "Arsen Trioksida",
+        formula: "As₂O₃",
+        desc: "Racun klasik yang tak berbau dan tak berasa. MEMATIKAN!",
+        image: "💀",
+        safety: "extreme"
+    },
+    "Al+O": {
+        result: "Aluminium Oksida",
+        formula: "Al₂O₃",
+        desc: "Safir dan ruby. Lapisan pelindung aluminium.",
         image: "💎",
         safety: "safe"
     },
+    "Ti+O": {
+        result: "Titanium Dioksida",
+        formula: "TiO₂",
+        desc: "Pigmen putih untuk cat dan tabir surya.",
+        image: "🎨",
+        safety: "safe"
+    },
+    "Cr+O": {
+        result: "Kromium(III) Oksida",
+        formula: "Cr₂O₃",
+        desc: "Pigmen hijau, tahan panas.",
+        image: "🎨",
+        safety: "warning"
+    },
+    "Mn+O": {
+        result: "Mangan Dioksida",
+        formula: "MnO₂",
+        desc: "Depolarizer baterai sel kering.",
+        image: "🔋",
+        safety: "warning"
+    },
+    "Ni+O": {
+        result: "Nikel(II) Oksida",
+        formula: "NiO",
+        desc: "Pigmen dan katalis.",
+        image: "⚗️",
+        safety: "warning"
+    },
+    "Co+O": {
+        result: "Kobalt(II) Oksida",
+        formula: "CoO",
+        desc: "Pigmen biru untuk keramik.",
+        image: "🔵",
+        safety: "warning"
+    },
+    "W+O": {
+        result: "Wolfram Trioksida",
+        formula: "WO₃",
+        desc: "Pigmen kuning dan katalis.",
+        image: "🎨",
+        safety: "safe"
+    },
+    "Mo+O": {
+        result: "Molibdenum Trioksida",
+        formula: "MoO₃",
+        desc: "Katalis dan pigmen.",
+        image: "⚗️",
+        safety: "warning"
+    },
+    "V+O": {
+        result: "Vanadium Pentoksida",
+        formula: "V₂O₅",
+        desc: "Katalis untuk asam sulfat.",
+        image: "🏭",
+        safety: "danger"
+    },
+    "U+O": {
+        result: "Uranium Dioksida",
+        formula: "UO₂",
+        desc: "Bahan bakar nuklir. SANGAT RADIOAKTIF!",
+        image: "⚛️",
+        safety: "extreme"
+    },
+    "Pu+O": {
+        result: "Plutonium Dioksida",
+        formula: "PuO₂",
+        desc: "Bahan bakar nuklir dan komponen senjata nuklir. SANGAT RADIOAKTIF!",
+        image: "💀",
+        safety: "extreme"
+    },
+    "Th+O": {
+        result: "Torium Dioksida",
+        formula: "ThO₂",
+        desc: "Bahan bakar nuklir generasi baru. RADIOAKTIF!",
+        image: "⚛️",
+        safety: "extreme"
+    },
+    "Xe+O": {
+        result: "Xenon Trioksida",
+        formula: "XeO₃",
+        desc: "SANGAT EKSPLOSIF! Xenon oksida tidak stabil.",
+        image: "💥",
+        safety: "extreme"
+    },
 
-    // ==================== REAKSI GAS MULIA (Sangat Jarang) ====================
+    // ==================== REAKSI HALOGEN & GARAM ====================
+    "H+F": {
+        result: "Asam Fluorida",
+        formula: "HF",
+        desc: "Asam super korosif yang dapat melarutkan kaca. SANGAT BERBAHAYA!",
+        image: "☠️",
+        safety: "extreme"
+    },
+    "H+Cl": {
+        result: "Asam Klorida",
+        formula: "HCl",
+        desc: "Asam kuat untuk industri dan pencernaan.",
+        image: "🧪",
+        safety: "warning"
+    },
+    "H+Br": {
+        result: "Asam Bromida",
+        formula: "HBr",
+        desc: "Asam kuat, iritasi kulit dan mata.",
+        image: "⚠️",
+        safety: "danger"
+    },
+    "H+I": {
+        result: "Asam Iodida",
+        formula: "HI",
+        desc: "Asam reduktor kuat, beracun.",
+        image: "🧪",
+        safety: "danger"
+    },
+    "Na+Cl": {
+        result: "Natrium Klorida",
+        formula: "NaCl",
+        desc: "Garam dapur, bumbu masak dan pengawet.",
+        image: "🧂",
+        safety: "safe"
+    },
+    "Na+F": {
+        result: "Natrium Fluorida",
+        formula: "NaF",
+        desc: "Pasta gigi anti gigi berlubang. Beracun dalam dosis besar.",
+        image: "🦷",
+        safety: "warning"
+    },
+    "Na+Br": {
+        result: "Natrium Bromida",
+        formula: "NaBr",
+        desc: "Sedatif dan obat kejang. Depresan SSP.",
+        image: "💊",
+        safety: "warning"
+    },
+    "Na+I": {
+        result: "Natrium Iodida",
+        formula: "NaI",
+        desc: "Sumber iodin untuk tiroid dan fotografi.",
+        image: "📸",
+        safety: "safe"
+    },
+    "K+Cl": {
+        result: "Kalium Klorida",
+        formula: "KCl",
+        desc: "Pupuk dan injeksi mati rasa. STOP JANTUNG dalam dosis tinggi!",
+        image: "💀",
+        safety: "extreme"
+    },
+    "K+F": {
+        result: "Kalium Fluorida",
+        formula: "KF",
+        desc: "Beracun, digunakan dalam fluorinasi.",
+        image: "⚠️",
+        safety: "danger"
+    },
+    "Li+Cl": {
+        result: "Litium Klorida",
+        formula: "LiCl",
+        desc: "Pengering udara dan obat bipolar.",
+        image: "💊",
+        safety: "warning"
+    },
+    "Rb+Cl": {
+        result: "Rubidium Klorida",
+        formula: "RbCl",
+        desc: "Penanda biologi, sedikit radioaktif.",
+        image: "🔬",
+        safety: "warning"
+    },
+    "Cs+Cl": {
+        result: "Sesium Klorida",
+        formula: "CsCl",
+        desc: "Untuk sentrifugasi density gradient.",
+        image: "⚗️",
+        safety: "warning"
+    },
+    "Al+Cl": {
+        result: "Aluminium Klorida",
+        formula: "AlCl₃",
+        desc: "Katalis Friedel-Crafts. Korosif dan berasap.",
+        image: "⚗️",
+        safety: "danger"
+    },
+    "Ti+Cl": {
+        result: "Titanium Tetraklorida",
+        formula: "TiCl₄",
+        desc: "Bereaksi dengan air menghasilkan awan putih. Iritasi!",
+        image: "☁️",
+        safety: "danger"
+    },
+    "Au+Cl": {
+        result: "Emas(III) Klorida",
+        formula: "AuCl₃",
+        desc: "Senyawa emas untuk electroplating.",
+        image: "👑",
+        safety: "warning"
+    },
+    "Pt+Cl": {
+        result: "Platina(II) Klorida",
+        formula: "PtCl₂",
+        desc: "Katalis penting dalam industri.",
+        image: "⚗️",
+        safety: "warning"
+    },
+    "U+F": {
+        result: "Uranium Heksafluorida",
+        formula: "UF₆",
+        desc: "Digunakan dalam pengayaan uranium untuk senjata nuklir. RADIOAKTIF!",
+        image: "☢️",
+        safety: "extreme"
+    },
     "Xe+F": {
-        result: "Xenon Fluorida",
+        result: "Xenon Difluorida",
         formula: "XeF₂",
         desc: "Salah satu senyawa gas mulia yang pertama dibuat. EKSPLOSIF!",
         image: "💣",
         safety: "extreme"
     },
     "Kr+F": {
-        result: "Kripton Fluorida", 
+        result: "Kripton Difluorida",
         formula: "KrF₂",
         desc: "Senyawa kripton yang sangat tidak stabil dan reaktif.",
         image: "⚡",
         safety: "extreme"
     },
-
-    // ==================== REAKSI BERBAHAYA & EKSPLOSIF ====================
-    "H+N": {
-        result: "Amonia",
-        formula: "NH₃",
-        desc: "Hidrogen dan Nitrogen membentuk amonia, bahan dasar pupuk.",
-        image: "🌾",
-        safety: "danger"
+    "Rn+F": {
+        result: "Radon Difluorida",
+        formula: "RnF₂",
+        desc: "Senyawa radioaktif yang sangat berbahaya.",
+        image: "☢️",
+        safety: "extreme"
     },
+    "He+F": {
+        result: "Tidak Bereaksi",
+        formula: "Tidak Ada",
+        desc: "Helium adalah gas mulia dan tidak membentuk senyawa stabil.",
+        image: "🚫",
+        safety: "safe"
+    },
+    "Ne+F": {
+        result: "Tidak Bereaksi",
+        formula: "Tidak Ada",
+        desc: "Neon terlalu stabil untuk bereaksi dengan fluor.",
+        image: "🚫",
+        safety: "safe"
+    },
+    "Ar+F": {
+        result: "Tidak Bereaksi",
+        formula: "Tidak Ada",
+        desc: "Argon tidak bereaksi dengan fluor pada kondisi normal.",
+        image: "🚫",
+        safety: "safe"
+    },
+
+    // ==================== REAKSI HIDRIDA ====================
     "Na+H": {
         result: "Natrium Hidrida",
         formula: "NaH",
@@ -261,9 +579,9 @@ const reactions = {
         safety: "extreme"
     },
     "K+H": {
-        result: "Kalium Hidrida", 
+        result: "Kalium Hidrida",
         formula: "KH",
-        desc: "Lebih reaktif dari natrium hidrida. SANGAT EKSPLOSIF!",
+        desc: "LEBIH EKSPLOSIF dari natrium! Sangat reaktif dengan air.",
         image: "💣",
         safety: "extreme"
     },
@@ -274,99 +592,225 @@ const reactions = {
         image: "☢️",
         safety: "extreme"
     },
-
-    // ==================== REAKSI RADIOAKTIF ====================
-    "U+F": {
-        result: "Uranium Heksafluorida",
-        formula: "UF₆",
-        desc: "Digunakan dalam pengayaan uranium untuk senjata nuklir. RADIOAKTIF!",
-        image: "☢️",
-        safety: "extreme"
-    },
-    "Pu+O": {
-        result: "Plutonium Oksida",
-        formula: "PuO₂",
-        desc: "Bahan bakar nuklir dan komponen senjata nuklir. SANGAT RADIOAKTIF!",
-        image: "💀",
-        safety: "extreme"
-    },
-
-    // ==================== REAKSI ASAM-BASA ====================
-    "H+S": {
-        result: "Asam Sulfat",
-        formula: "H₂SO₄",
-        desc: "Asam kuat yang sangat korosif. 'Raja Kimia' dalam industri.",
-        image: "🧪",
-        safety: "extreme"
-    },
-    "H+N+O": {
-        result: "Asam Nitrat",
-        formula: "HNO₃",
-        desc: "Asam kuat untuk produksi pupuk dan bahan peledak.",
+    "Rb+H": {
+        result: "Rubidium Hidrida",
+        formula: "RbH",
+        desc: "SANGAT EKSPLOSIF! Lebih reaktif dari kalium.",
         image: "💥",
         safety: "extreme"
     },
-
-    // ==================== REAKSI ORGANIK ====================
-    "C+H+O": {
-        result: "Glukosa",
-        formula: "C₆H₁₂O₆",
-        desc: "Gula sederhana, sumber energi utama makhluk hidup.",
-        image: "🍬",
-        safety: "safe"
-    },
-    "C+H+O+N": {
-        result: "Asam Amino",
-        formula: "Variasi",
-        desc: "Unit pembangun protein dan kehidupan.",
-        image: "🧬",
-        safety: "safe"
-    },
-
-    // ==================== REAKSI LOGAM BERAT BERACUN ====================
-    "Hg+S": {
-        result: "Raksa Sulfida",
-        formula: "HgS",
-        desc: "Cinnabar, bijih merkuri utama. SANGAT BERACUN!",
-        image: "💀",
+    "Cs+H": {
+        result: "Sesium Hidrida",
+        formula: "CsH",
+        desc: "PALING EKSPLOSIF! Bereaksi hebat bahkan dengan es.",
+        image: "💣",
         safety: "extreme"
     },
-    "Pb+S": {
-        result: "Galenit",
-        formula: "PbS",
-        desc: "Bijih timbal utama. BERACUN dan karsinogenik.",
-        image: "⚖️",
+    "Ca+H": {
+        result: "Kalsium Hidrida",
+        formula: "CaH₂",
+        desc: "Sumber hidrogen, pengering kuat.",
+        image: "💧",
+        safety: "danger"
+    },
+    "Mg+H": {
+        result: "Magnesium Hidrida",
+        formula: "MgH₂",
+        desc: "Penyimpanan hidrogen untuk sel bahan bakar.",
+        image: "🔋",
+        safety: "warning"
+    },
+    "Al+H": {
+        result: "Aluminium Hidrida",
+        formula: "AlH₃",
+        desc: "Reduktor kuat dalam kimia organik.",
+        image: "🧪",
+        safety: "danger"
+    },
+
+    // ==================== REAKSI ASAM/GAS BERACUN ====================
+    "H+S": {
+        result: "Hidrogen Sulfida",
+        formula: "H₂S",
+        desc: "Gas telur busuk. BERACUN dan mudah meledak!",
+        image: "🥚",
         safety: "extreme"
     },
-    "Cd+S": {
-        result: "Greenockite", 
-        formula: "CdS",
-        desc: "Bijih kadmium. LOGAM BERAT BERACUN!",
+    "H+N": {
+        result: "Amonia",
+        formula: "NH₃",
+        desc: "Bahan pupuk dan pembersih. Iritasi pernapasan.",
+        image: "🌾",
+        safety: "danger"
+    },
+    "H+P": {
+        result: "Fosfin",
+        formula: "PH₃",
+        desc: "Gas beracun, bau bawang busuk. SANGAT BERBAHAYA!",
         image: "☠️",
         safety: "extreme"
     },
 
-    // ==================== REAKSI SINTETIS & LANJUTAN ====================
-    "Si+O": {
-        result: "Silika",
-        formula: "SiO₂",
-        desc: "Penyusun utama pasir dan kaca.",
-        image: "🏖️",
+    // ==================== REAKSI SULFIDA & LOGAM BERAT ====================
+    "Fe+S": {
+        result: "Besi(II) Sulfida",
+        formula: "FeS",
+        desc: "Mineral pirit, sering dikira emas.",
+        image: "💰",
         safety: "safe"
     },
-    "Ti+O": {
-        result: "Titanium Dioksida",
-        formula: "TiO₂",
-        desc: "Pigmen putih untuk cat dan tabir surya.",
-        image: "🎨",
+    "Cu+S": {
+        result: "Tembaga(I) Sulfida",
+        formula: "Cu₂S",
+        desc: "Bijih tembaga penting.",
+        image: "⛏️",
         safety: "safe"
     },
     "Ag+S": {
         result: "Perak Sulfida",
         formula: "Ag₂S",
-        desc: "Menyebabkan perak berubah warna menjadi hitam.",
+        desc: "Menyebabkan perak berubah hitam.",
         image: "⚫",
         safety: "safe"
+    },
+    "Zn+S": {
+        result: "Seng Sulfida",
+        formula: "ZnS",
+        desc: "Fosfor dan pigmen.",
+        image: "✨",
+        safety: "safe"
+    },
+    "Hg+S": {
+        result: "Raksa Sulfida",
+        formula: "HgS",
+        desc: "Bijih merkuri utama. SANGAT BERACUN!",
+        image: "💀",
+        safety: "extreme"
+    },
+    "Pb+S": {
+        result: "Timbal(II) Sulfida",
+        formula: "PbS",
+        desc: "Bijih timbal utama. LOGAM BERAT BERACUN!",
+        image: "💀",
+        safety: "extreme"
+    },
+    "Cd+S": {
+        result: "Kadmium Sulfida",
+        formula: "CdS",
+        desc: "Bijih kadmium. LOGAM BERAT BERACUN!",
+        image: "☠️",
+        safety: "extreme"
+    },
+    "Sb+S": {
+        result: "Antimon Trisulfida",
+        formula: "Sb₂S₃",
+        desc: "Stibnit, bijih antimon.",
+        image: "⛏️",
+        safety: "danger"
+    },
+    "Bi+S": {
+        result: "Bismut Sulfida",
+        formula: "Bi₂S₃",
+        desc: "Bijih bismut.",
+        image: "💎",
+        safety: "warning"
+    },
+
+    // ==================== REAKSI KARBIDA & SILISIDA ====================
+    "Ca+C": {
+        result: "Kalsium Karbida",
+        formula: "CaC₂",
+        desc: "Menghasilkan asetilena untuk las karbit.",
+        image: "🔥",
+        safety: "danger"
+    },
+    "Si+C": {
+        result: "Silikon Karbida",
+        formula: "SiC",
+        desc: "Karborundum, abrasif sangat keras.",
+        image: "💎",
+        safety: "safe"
+    },
+    "Al+C": {
+        result: "Aluminium Karbida",
+        formula: "Al₄C₃",
+        desc: "Bereaksi dengan air menghasilkan metana.",
+        image: "🔥",
+        safety: "danger"
+    },
+    "Ca+Si": {
+        result: "Kalsium Silisida",
+        formula: "CaSi₂",
+        desc: "Menghasilkan silana dengan asam.",
+        image: "🧪",
+        safety: "danger"
+    },
+    "Mg+Si": {
+        result: "Magnesium Silisida",
+        formula: "Mg₂Si",
+        desc: "Menghasilkan silana beracun dengan asam.",
+        image: "☠️",
+        safety: "extreme"
+    },
+
+    // ==================== REAKSI NITRIDA, FOSFIDA & BORIDA ====================
+    "Li+N": {
+        result: "Litium Nitrida",
+        formula: "Li₃N",
+        desc: "Salah satu nitrida logam yang stabil.",
+        image: "🔬",
+        safety: "warning"
+    },
+    "Mg+N": {
+        result: "Magnesium Nitrida",
+        formula: "Mg₃N₂",
+        desc: "Bereaksi dengan air menghasilkan amonia.",
+        image: "🌾",
+        safety: "warning"
+    },
+    "Al+N": {
+        result: "Aluminium Nitrida",
+        formula: "AlN",
+        desc: "Keramik konduktor panas.",
+        image: "⚡",
+        safety: "safe"
+    },
+    "Na+P": {
+        result: "Natrium Fosfida",
+        formula: "Na₃P",
+        desc: "Menghasilkan fosfin beracun dengan air.",
+        image: "☠️",
+        safety: "extreme"
+    },
+    "Ca+P": {
+        result: "Kalsium Fosfida",
+        formula: "Ca₃P₂",
+        desc: "Racun tikus, menghasilkan fosfin.",
+        image: "🐀",
+        safety: "extreme"
+    },
+    "Zn+P": {
+        result: "Seng Fosfida",
+        formula: "Zn₃P₂",
+        desc: "Racun tikus yang efektif.",
+        image: "🐀",
+        safety: "extreme"
+    },
+    "Mg+B": {
+        result: "Magnesium Diborida",
+        formula: "MgB₂",
+        desc: "Superkonduktor suhu tinggi.",
+        image: "⚡",
+        safety: "safe"
+    },
+
+    // ==================== REAKSI ORGANIK SEDERHANA (HANYA C+H) ====================
+    "C+H": {
+        result: "Metana",
+        formula: "CH₄",
+        desc: "Karbon dan Hidrogen membentuk metana, gas alam utama.",
+        image: "🔥",
+        safety: "danger"
     },
     "Au+C": {
         result: "Sianida Emas",
@@ -375,66 +819,40 @@ const reactions = {
         image: "💀",
         safety: "extreme"
     },
-
-    // ==================== REAKSI EKSPERIMENTAL ====================
-    "He+F": {
-        result: "Tidak Bereaksi",
-        formula: "Tidak Ada",
-        desc: "Helium adalah gas mulia dan tidak membentuk senyawa stabil.",
-        image: "🚫",
-        safety: "safe"
-    },
-    "Ne+F": {
-        result: "Tidak Bereaksi", 
-        formula: "Tidak Ada",
-        desc: "Neon terlalu stabil untuk bereaksi dengan fluor.",
-        image: "🚫",
-        safety: "safe"
-    }
 };
 
-// Layout tabel periodik LENGKAP (118 Unsur)
-const periodicTableLayout = [
-    // Baris 1: Periode 1
-    [1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 2],
-    
-    // Baris 2: Periode 2
-    [3, 4, null, null, null, null, null, null, null, null, null, null, 5, 6, 7, 8, 9, 10],
-    
-    // Baris 3: Periode 3
-    [11, 12, null, null, null, null, null, null, null, null, null, null, 13, 14, 15, 16, 17, 18],
-    
-    // Baris 4: Periode 4
-    [19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36],
-    
-    // Baris 5: Periode 5
-    [37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54],
-    
-    // Baris 6: Periode 6 (Lantanida diwakili oleh 57)
-    [55, 56, 57, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86],
-    
-    // Baris 7: Periode 7 (Aktinida diwakili oleh 89)
-    [87, 88, 89, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118],
-    
-    // Baris 8: Lantanida (Z=58 sampai Z=71)
-    [null, null, null, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, null],
-    
-    // Baris 9: Aktinida (Z=90 sampai Z=103)
-    [null, null, null, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, null]
-];
+// =========================================================================
+// BAGIAN 3: FUNGSI LOGIKA (TETAP SAMA)
+// =========================================================================
 
-// Sistem fallback untuk kombinasi yang tidak ada
+/**
+ * Mendapatkan hasil reaksi kimia antara dua unsur.
+ * @param {string} elem1 - Simbol unsur pertama.
+ * @param {string} elem2 - Simbol unsur kedua.
+ * @returns {object} Objek hasil reaksi atau objek fallback.
+ */
 function getReaction(elem1, elem2) {
+    // Membuat kunci reaksi dalam dua urutan (untuk memastikan pencarian dua arah)
     const key1 = `${elem1}+${elem2}`;
     const key2 = `${elem2}+${elem1}`;
-    
+
+    // Mencari reaksi langsung
     if (reactions[key1]) return reactions[key1];
     if (reactions[key2]) return reactions[key2];
-    
+
+    // Logika untuk menangani kasus seperti C+O dan C+O2, N+O dan N+O2
+    // Walaupun input user hanya 2 unsur, kita bisa periksa reaksi yang memiliki angka stoikiometri di key-nya.
+    if ((elem1 === 'C' && elem2 === 'O') || (elem2 === 'C' && elem1 === 'O')) {
+        if (reactions['C+O2']) return reactions['C+O2'];
+    }
+    if ((elem1 === 'N' && elem2 === 'O') || (elem2 === 'N' && elem1 === 'O')) {
+        if (reactions['N+O2']) return reactions['N+O2'];
+    }
+
     // Cari data unsur untuk fallback
     const element1 = elements.find(el => el.symbol === elem1);
     const element2 = elements.find(el => el.symbol === elem2);
-    
+
     if (!element1 || !element2) {
         return {
             result: "Unsur Tidak Dikenal",
@@ -445,33 +863,108 @@ function getReaction(elem1, elem2) {
         };
     }
 
-    // Logika fallback berdasarkan kategori
+    // Logika fallback berdasarkan kategori (Gas Mulia tidak bereaksi)
     if (element1.category.includes("Gas Mulia") || element2.category.includes("Gas Mulia")) {
         return {
             result: "Tidak Bereaksi",
             formula: "Tidak Ada",
-            desc: `${element1.name} dan ${element2.name} tidak bereaksi karena sifat gas mulia yang sangat stabil.`,
+            desc: `${element1.name} dan ${element2.name} tidak bereaksi karena sifat gas mulia yang sangat stabil (kecuali dalam kondisi ekstrem).`,
             image: "🚫",
             safety: "safe"
         };
     }
-    
-    if (element1.category.includes("Logam") && element2.category.includes("Logam")) {
-        return {
-            result: "Paduan Logam",
-            formula: `${elem1}-${elem2}`,
-            desc: `Campuran ${element1.name} dan ${element2.name} kemungkinan membentuk paduan logam.`,
-            image: "⚙️",
-            safety: "safe"
-        };
-    }
-    
-    // Fallback umum (reaksi yang tidak terdefinisi)
+
+    // Fallback umum
     return {
-        result: "Senyawa Baru",
-        formula: `${elem1}${elem2}`,
-        desc: `Kombinasi ${element1.name} dan ${element2.name} menghasilkan senyawa yang belum teridentifikasi atau memerlukan kondisi khusus.`,
-        image: "🔬",
-        safety: "unknown"
+        result: "Reaksi Kimia Potensial",
+        formula: "Belum Diketahui",
+        desc: `Reaksi antara **${element1.name}** dan **${element2.name}** kemungkinan terjadi. Sifat reaktifnya tergantung pada kategori mereka: ${element1.category} dan ${element2.category}.`,
+        image: "❓",
+        safety: "warning"
     };
 }
+
+/**
+ * Mendapatkan informasi unsur berdasarkan nama atau simbol.
+ * @param {string} query - Nama atau simbol unsur.
+ * @returns {object|undefined} Objek unsur atau undefined.
+ */
+function getElementInfo(query) {
+    const cleanQuery = query.toLowerCase();
+    const result = elements.find(el =>
+        el.symbol.toLowerCase() === cleanQuery ||
+        el.name.toLowerCase() === cleanQuery
+    );
+    return result;
+}
+
+/**
+ * Mendapatkan simbol unsur dari namanya.
+ * @param {string} name - Nama unsur.
+ * @returns {string|null} Simbol unsur atau null.
+ */
+const getSymbolFromName = (name) => {
+    // Normalisasi nama untuk pencarian, misalnya mengubah "klor" menjadi "Klor"
+    const element = elements.find(el => el.name.toLowerCase() === name.toLowerCase());
+    return element ? element.symbol : null;
+};
+
+/**
+ * Fungsi utama untuk memproses permintaan.
+ * @param {string} userQuery - Permintaan pengguna.
+ * @returns {string} Jawaban dalam format Markdown.
+ */
+function processQuery(userQuery) {
+    // Mengekstrak unsur dari query, mengabaikan huruf kapital
+    const match = userQuery.match(/reaksi antara (\w+) dan (\w+)/i);
+
+    if (match) {
+        const name1 = match[1];
+        const name2 = match[2];
+
+        const symbol1 = getSymbolFromName(name1);
+        const symbol2 = getSymbolFromName(name2);
+
+        if (symbol1 && symbol2) {
+            const reactionResult = getReaction(symbol1, symbol2);
+
+            const elem1Data = elements.find(el => el.symbol === symbol1);
+            const elem2Data = elements.find(el => el.symbol === symbol2);
+
+            const safetyMapping = {
+                "safe": "Aman",
+                "warning": "Peringatan",
+                "danger": "Berbahaya",
+                "extreme": "**SANGAT BERBAHAYA!**",
+                "unknown": "Tidak Diketahui"
+            };
+            const safetyText = safetyMapping[reactionResult.safety] || "Tidak Diketahui";
+
+            return `## 🧪 Hasil Reaksi Kimia: ${elem1Data.name} + ${elem2Data.name}\n\n---\n\n* **Unsur 1:** **${elem1Data.name}** (${elem1Data.symbol}, Golongan: ${elem1Data.category})\n* **Unsur 2:** **${elem2Data.name}** (${elem2Data.symbol}, Golongan: ${elem2Data.category})\n\n### ${reactionResult.image} Produk Reaksi\n\n* **Nama Senyawa:** **${reactionResult.result}**\n* **Formula Kimia:** ${reactionResult.formula}\n* **Deskripsi:** ${reactionResult.desc}\n* **Tingkat Keamanan:** **${safetyText}**\n\n---\n\nApakah Anda ingin mencoba reaksi antara unsur kimia lain? (Contoh: "Reaksi antara Kalium dan Klor")`;
+
+        } else {
+            const notFound = [];
+            if (!symbol1) notFound.push(name1);
+            if (!symbol2) notFound.push(name2);
+
+            return `⚠️ Maaf, saya tidak dapat menemukan data untuk unsur kimia: **${notFound.join(" dan ")}**. Silakan periksa ejaan.\n\nApakah Anda ingin mencari informasi tentang unsur tertentu? (Contoh: "Informasi Litium")`;
+        }
+    } else {
+        // Jika tidak cocok dengan pola reaksi, coba cari info unsur
+        const elementInfo = getElementInfo(userQuery.replace("informasi", "").trim());
+
+        if (elementInfo) {
+            return `## ${elementInfo.image} Informasi Unsur Kimia: ${elementInfo.name}\n\n---\n\n* **Simbol:** **${elementInfo.symbol}**\n* **Nomor Atom:** ${elementInfo.number}\n* **Kategori:** **${elementInfo.category}**\n* **Deskripsi:** ${elementInfo.desc}\n\nApakah Anda ingin mengetahui unsur lain atau reaksi kimia? (Contoh: "Reaksi antara Litium dan Fluor")`;
+        } else {
+            return "❌ Format pertanyaan tidak dikenali. Silakan ajukan pertanyaan dalam format:\n\n1.  **Informasi Unsur:** \"Informasi [Nama/Simbol Unsur]\" (Contoh: \"Informasi Litium\")\n2.  **Reaksi Kimia:** \"Reaksi antara [Unsur A] dan [Unsur B]\" (Contoh: \"Reaksi antara Kalium dan Klor\")";
+        }
+    }
+}
+
+// =========================================================================
+// CONTOH PENGGUNAAN
+// Anda dapat menguji kode dengan menjalankan fungsi processQuery dengan input:
+// console.log(processQuery("Informasi Plutonium"));
+// console.log(processQuery("Reaksi antara Litium dan Fluor"));
+// console.log(processQuery("Reaksi antara Kalium dan Hidrogen"));
+// =========================================================================

@@ -48,8 +48,136 @@ header p {
     padding: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
+/* Search Container */
+.search-container {
+    position: relative;
+    margin-bottom: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-/* PERUBAHAN: Pengaturan Grid Tabel Periodik */
+#elementSearch {
+    width: 100%;
+    padding: 12px 45px 12px 15px;
+    border: 2px solid #667eea;
+    border-radius: 25px;
+    font-size: 1rem;
+    background: white;
+    box-shadow: 0 3px 10px rgba(102, 126, 234, 0.1);
+    transition: all 0.3s ease;
+}
+
+#elementSearch:focus {
+    outline: none;
+    border-color: #764ba2;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+}
+
+#elementSearch::placeholder {
+    color: #999;
+}
+
+#clearSearch {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #999;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    display: none;
+}
+
+#clearSearch:hover {
+    background: #f0f0f0;
+    color: #666;
+}
+/* Search Results Highlight - SOLUSI TERBAIK */
+.element.highlighted {
+    border: 3px solid #667eea;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb) !important;
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.7);
+    transform: scale(1.1);
+    z-index: 20;
+    animation: pulse 2s infinite;
+}
+
+/* Teks dengan kontras maksimal */
+.element.highlighted .element-symbol,
+.element.highlighted .element-number {
+    color: #0d47a1 !important; /* Biru sangat tua */
+    font-weight: 800; /* Tebal */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes pulse {
+    0% { 
+        box-shadow: 0 0 15px rgba(102, 126, 234, 0.6);
+        transform: scale(1.1);
+    }
+    50% { 
+        box-shadow: 0 0 25px rgba(102, 126, 234, 0.9);
+        transform: scale(1.12);
+    }
+    100% { 
+        box-shadow: 0 0 15px rgba(102, 126, 234, 0.6);
+        transform: scale(1.1);
+    }
+}
+
+/* Override semua kategori */
+.element.highlighted.alkali-metal .element-symbol,
+.element.highlighted.alkaline-earth .element-symbol,
+.element.highlighted.transition-metal .element-symbol,
+.element.highlighted.post-transition .element-symbol,
+.element.highlighted.metalloid .element-symbol,
+.element.highlighted.non-metal .element-symbol,
+.element.highlighted.halogen .element-symbol,
+.element.highlighted.noble-gas .element-symbol,
+.element.highlighted.lanthanide .element-symbol,
+.element.highlighted.actinide .element-symbol,
+.element.highlighted .element-number {
+    color: #0d47a1 !important;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+/* No Results Message */
+.no-results {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+    font-style: italic;
+    grid-column: 1 / -1;
+    font-size: 1.1rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Search Info */
+.search-info {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #667eea;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 8px 15px;
+    background: #f0f4ff;
+    border-radius: 20px;
+    display: inline-block;
+}
+/* ------------------------------------------- */
+/* TABLE GRID AND ELEMENT STYLING */
+/* ------------------------------------------- */
 .periodic-table {
     display: grid;
     grid-template-columns: repeat(18, minmax(40px, 1fr));
@@ -59,7 +187,6 @@ header p {
     padding: 10px;
 }
 
-/* PERUBAHAN: Styling Sel Unsur */
 .element {
     aspect-ratio: 1;
     display: flex;
@@ -70,22 +197,18 @@ header p {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
-    padding: 2px; /* Lebih kecil */
-    font-size: 0.7rem; /* Lebih kecil */
+    padding: 2px;
+    font-size: 0.7rem;
     text-align: center;
     background: white;
-    min-width: 40px; /* Lebar minimum baru */
+    min-width: 40px;
+    position: relative; /* Untuk positioning checkmark */
 }
 
 .element:hover {
     transform: scale(1.1);
     z-index: 10;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.element.selected {
-    border-color: #ff6b6b;
-    background-color: #ffe6e6;
 }
 
 .element-symbol {
@@ -99,18 +222,85 @@ header p {
     color: #666;
 }
 
-/* Warna kategori unsur */
+/* Sel Kosong */
+.element.empty {
+    background: #f8f9fa !important;
+    border: 1px dashed #ddd !important;
+    cursor: default !important;
+    opacity: 0.3;
+}
+
+.element.empty:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    opacity: 0.5;
+}
+
+/* Highlight Hasil Pencarian */
+.element.highlighted {
+    border: 3px solid #ffd166;
+    background-color: #fff9e6 !important;
+    box-shadow: 0 0 10px rgba(255, 209, 102, 0.5);
+    transform: scale(1.08);
+    z-index: 20;
+}
+
+/* Pesan Tidak Ada Hasil */
+.no-results {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-style: italic;
+    grid-column: 1 / -1;
+}
+
+/* Unsur Dipilih */
+.element.selected {
+    border-color: #ff6b6b;
+    background-color: #ffe6e6;
+    box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.3);
+    transform: scale(1.05);
+}
+
+.element.selected:hover {
+    border-color: #ff4757;
+    background-color: #ffcccc;
+    box-shadow: 0 0 0 3px rgba(255, 71, 87, 0.5);
+}
+
+.element.selected::after {
+    content: "✓";
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: #ff6b6b;
+    color: white;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Warna kategori unsur (Digunakan untuk sel dan color-box) */
 .alkali-metal { background-color: #ff6b6b; color: white; }
 .alkaline-earth { background-color: #ffd166; }
 .transition-metal { background-color: #06d6a0; color: white; }
 .post-transition { background-color: #118ab2; color: white; }
 .metalloid { background-color: #073b4c; color: white; }
 .non-metal { background-color: #ef476f; color: white; }
-.halogen { background-color: #7209b7; color: white; }  /* Tambahkan ini */
+.halogen { background-color: #7209b7; color: white; }
 .noble-gas { background-color: #ff9e00; color: white; }
 .lanthanide { background-color: #f72585; color: white; }
 .actinide { background-color: #4cc9f0; }
 
+
+/* ------------------------------------------- */
+/* INFO PANEL & MIXING PANEL */
+/* ------------------------------------------- */
 .info-panel {
     display: flex;
     flex-direction: column;
@@ -322,53 +512,17 @@ footer p {
     opacity: 0.8;
 }
 
-/* --- PERUBAHAN UTAMA: Styling Sel Kosong --- */
-.element.empty {
-    background: #f8f9fa !important;
-    border: 1px dashed #ddd !important;
-    cursor: default !important;
-    opacity: 0.3;
-}
-
-.element.empty:hover {
-    transform: none !important;
-    box-shadow: none !important;
-    opacity: 0.5; /* Opacity meningkat saat hover */
-}
 /* ------------------------------------------- */
-
-/* Responsif untuk desktop dan layar kecil */
-@media (max-width: 1200px) {
-    .main-content {
-        grid-template-columns: 1fr;
-    }
-    
-    /* PERUBAHAN: Pengaturan Grid pada Layar Kecil */
-    .periodic-table {
-        grid-template-columns: repeat(10, 1fr);
-        gap: 1px;
-    }
-
-    /* PERUBAHAN: Styling Sel pada Layar Kecil */
-    .element {
-        min-width: 35px;
-        font-size: 0.6rem;
-    }
-    
-    .element-symbol {
-        font-size: 0.8rem;
-    }
-}
-
-/* Legenda Warna */
+/* COLOR LEGEND STYLING */
+/* ------------------------------------------- */
 .color-legend {
     background: white;
     border-radius: 10px;
     padding: 15px;
     margin-top: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    width: 100%; /* Tambahkan ini */
-    box-sizing: border-box; /* Tambahkan ini */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .color-legend h3 {
@@ -380,9 +534,9 @@ footer p {
 
 .legend-items {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Ubah menjadi 5 kolom tetap */
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
-    justify-items: start; /* Rata kiri */
+    justify-items: start;
 }
 
 .legend-item {
@@ -390,7 +544,7 @@ footer p {
     align-items: center;
     gap: 8px;
     padding: 5px;
-    min-width: 0; /* Prevent overflow */
+    min-width: 0;
 }
 
 .color-box {
@@ -398,53 +552,21 @@ footer p {
     height: 20px;
     border-radius: 4px;
     border: 2px solid #e0e0e0;
-    flex-shrink: 0; /* Prevent shrinking */
+    flex-shrink: 0;
 }
 
 .legend-item span {
     font-size: 0.9rem;
     color: #555;
-    white-space: nowrap; /* Prevent text wrapping */
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-/* Warna-warna kategori */
-.color-box.alkali-metal { background-color: #ff6b6b; }
-.color-box.alkaline-earth { background-color: #ffd166; }
-.color-box.transition-metal { background-color: #06d6a0; }
-.color-box.post-transition { background-color: #118ab2; }
-.color-box.metalloid { background-color: #073b4c; }
-.color-box.non-metal { background-color: #ef476f; }
-.color-box.halogen { background-color: #7209b7; }
-.color-box.noble-gas { background-color: #ff9e00; }
-.color-box.lanthanide { background-color: #f72585; }
-.color-box.actinide { background-color: #4cc9f0; }
 
-/* Responsif - sesuaikan dengan tabel periodik */
-@media (max-width: 1200px) {
-    .legend-items {
-        grid-template-columns: repeat(3, 1fr); /* 3 kolom di tablet */
-    }
-}
-
-@media (max-width: 768px) {
-    .legend-items {
-        grid-template-columns: repeat(2, 1fr); /* 2 kolom di mobile */
-    }
-    
-    .legend-item span {
-        font-size: 0.8rem; /* Sedikit lebih kecil di mobile */
-    }
-}
-
-@media (max-width: 480px) {
-    .legend-items {
-        grid-template-columns: 1fr; /* 1 kolom di mobile sangat kecil */
-    }
-}
-
-/* Safety Level Styling */
+/* ------------------------------------------- */
+/* SAFETY BADGE STYLING */
+/* ------------------------------------------- */
 .reaction-result.safe { border-left: 5px solid #06d6a0; }
 .reaction-result.warning { border-left: 5px solid #ffd166; }
 .reaction-result.danger { border-left: 5px solid #ff9e00; }
@@ -466,39 +588,48 @@ footer p {
 .safety-badge.extreme { background: #ef476f; color: white; }
 .safety-badge.unknown { background: #118ab2; color: white; }
 
-.element.selected {
-    border-color: #ff6b6b;
-    background-color: #ffe6e6;
-    box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.3);
-    transform: scale(1.05);
+
+/* ------------------------------------------- */
+/* RESPONSIVENESS */
+/* ------------------------------------------- */
+@media (max-width: 1200px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .periodic-table {
+        /* Mengurangi kolom agar tabel tidak terlalu lebar */
+        grid-template-columns: repeat(10, 1fr);
+        gap: 1px;
+    }
+
+    .element {
+        min-width: 35px;
+        font-size: 0.6rem;
+    }
+    
+    .element-symbol {
+        font-size: 0.8rem;
+    }
+    
+    /* Legenda */
+    .legend-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-/* Efek hover untuk unsur yang sudah dipilih */
-.element.selected:hover {
-    border-color: #ff4757;
-    background-color: #ffcccc;
-    box-shadow: 0 0 0 3px rgba(255, 71, 87, 0.5);
+@media (max-width: 768px) {
+    .legend-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .legend-item span {
+        font-size: 0.8rem;
+    }
 }
 
-/* Tambahkan indikator visual untuk toggle */
-.element.selected::after {
-    content: "✓";
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    background: #ff6b6b;
-    color: white;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    font-size: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-}
-
-.element {
-    position: relative; /* Untuk positioning checkmark */
-    transition: all 0.3s ease;
+@media (max-width: 480px) {
+    .legend-items {
+        grid-template-columns: 1fr;
+    }
 }
