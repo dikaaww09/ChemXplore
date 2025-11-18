@@ -96,4 +96,8 @@ Beberapa reaksi dalam aplikasi ini sangat berbahaya dan mematikan jika dilakukan
 ---
 
 **Selamat Menjelajah Dunia Kimia!** 🧪✨  
+<<<<<<< HEAD
 *Dikembangkan oleh Dika S.P & Erlangga S.P*
+=======
+*Dikembangkan oleh Dika S.P & Erlangga S.P*
+>>>>>>> e52adc6ae17289e0aacfe3c813a3dc562484801c
