@@ -253,3 +253,44 @@
         border-width: 2px;
     }
 }
+
+/* ------------------------------------------- */
+/* MOBILE-SPECIFIC GRID LAYOUTS (480px) */
+/* ------------------------------------------- */
+
+.mobile-layout {
+    display: none;
+}
+
+@media (max-width: 480px) {
+
+    /* Sembunyikan elemen kosong atau dummy */
+    .element.empty {
+        display: none;
+    }
+
+    /* Tetap tampilkan elemen prioritas */
+    .element[data-number="1"],  /* H */
+    .element[data-number="2"],  /* He */
+    .element[data-number="3"],  /* Li */
+    .element[data-number="6"],  /* C */
+    .element[data-number="7"],  /* N */
+    .element[data-number="8"],  /* O */
+    .element[data-number="11"], /* Na */
+    .element[data-number="12"], /* Mg */
+    .element[data-number="13"], /* Al */
+    .element[data-number="14"], /* Si */
+    .element[data-number="16"], /* S */
+    .element[data-number="17"], /* Cl */
+    .element[data-number="19"], /* K */
+    .element[data-number="20"], /* Ca */
+    .element[data-number="26"], /* Fe */
+    .element[data-number="29"], /* Cu */
+    .element[data-number="30"], /* Zn */
+    .element[data-number="47"], /* Ag */
+    .element[data-number="79"], /* Au */
+    .element[data-number="80"], /* Hg */
+    .element[data-number="82"]  /* Pb */ {
+        display: flex !important;
+    }
+}
