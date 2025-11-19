@@ -819,6 +819,587 @@ const reactions = {
         image: "💀",
         safety: "extreme"
     },
+    "Li+F": {
+        result: "Litium Fluorida",
+        formula: "LiF",
+        desc: "Digunakan dalam keramik dan produksi aluminium. Relatif aman.",
+        image: "⚗️",
+        safety: "safe"
+    },
+    "Li+Br": {
+        result: "Litium Bromida",
+        formula: "LiBr",
+        desc: "Pengering dan sedatif. Beracun dalam dosis tinggi.",
+        image: "💊",
+        safety: "warning"
+    },
+    "Rb+F": {
+        result: "Rubidium Fluorida",
+        formula: "RbF",
+        desc: "Senyawa rubidium yang higroskopis.",
+        image: "🧪",
+        safety: "warning"
+    },
+    "Cs+F": {
+        result: "Sesium Fluorida",
+        formula: "CsF",
+        desc: "Base kuat dalam kimia organik.",
+        image: "⚗️",
+        safety: "danger"
+    },
+
+    // ==================== REAKSI LOGAM ALKALI TANAH BARU ====================
+    "Be+F": {
+        result: "Berilium Fluorida",
+        formula: "BeF₂",
+        desc: "SANGAT BERACUN! Penyebab beriliosis.",
+        image: "💀",
+        safety: "extreme"
+    },
+    "Be+Cl": {
+        result: "Berilium Klorida",
+        formula: "BeCl₂",
+        desc: "Katalis dan prekursor logam berilium. BERACUN!",
+        image: "☠️",
+        safety: "extreme"
+    },
+    "Mg+Cl": {
+        result: "Magnesium Klorida",
+        formula: "MgCl₂",
+        desc: "Garam Epsom, pupuk, dan koagulan tofu.",
+        image: "🧂",
+        safety: "safe"
+    },
+    "Ca+Cl": {
+        result: "Kalsium Klorida",
+        formula: "CaCl₂",
+        desc: "Pengering, pengawet makanan, dan pelebur es.",
+        image: "🧊",
+        safety: "safe"
+    },
+    "Sr+Cl": {
+        result: "Stronsium Klorida",
+        formula: "SrCl₂",
+        desc: "Pasta gigi sensitif dan kembang api merah.",
+        image: "🦷",
+        safety: "warning"
+    },
+    "Ba+Cl": {
+        result: "Barium Klorida",
+        formula: "BaCl₂",
+        desc: "Beracun, digunakan dalam industri minyak.",
+        image: "⚠️",
+        safety: "danger"
+    },
+
+    // ==================== REAKSI LOGAM TRANSISI BARU ====================
+    "Sc+O": {
+        result: "Skandium Oksida",
+        formula: "Sc₂O₃",
+        desc: "Untuk lampu intensitas tinggi dan alloy.",
+        image: "💡",
+        safety: "warning"
+    },
+    "Ti+N": {
+        result: "Titanium Nitrida",
+        formula: "TiN",
+        desc: "Pelapis emas untuk peralatan medis dan perkakas.",
+        image: "🛠️",
+        safety: "safe"
+    },
+    "V+N": {
+        result: "Vanadium Nitrida",
+        formula: "VN",
+        desc: "Memperkuat baja, coating tahan aus.",
+        image: "⚙️",
+        safety: "warning"
+    },
+    "Cr+Cl": {
+        result: "Kromium Klorida",
+        formula: "CrCl₃",
+        desc: "Katalis dan mordant tekstil. Karsinogen!",
+        image: "🎨",
+        safety: "danger"
+    },
+    "Mn+Cl": {
+        result: "Mangan Klorida",
+        formula: "MnCl₂",
+        desc: "Pupuk mikronutrien dan katalis.",
+        image: "🌱",
+        safety: "warning"
+    },
+    "Co+Cl": {
+        result: "Kobalt Klorida",
+        formula: "CoCl₂",
+        desc: "Indikator kelembaban, berubah biru ke merah muda.",
+        image: "💧",
+        safety: "danger"
+    },
+    "Ni+Cl": {
+        result: "Nikel Klorida",
+        formula: "NiCl₂",
+        desc: "Electroplating dan katalis. Karsinogen!",
+        image: "⚗️",
+        safety: "danger"
+    },
+
+    // ==================== REAKSI LOGAM POST-TRANSISI BARU ====================
+    "Ga+As": {
+        result: "Gallium Arsenida",
+        formula: "GaAs",
+        desc: "Semikonduktor untuk LED dan sel surya. BERACUN!",
+        image: "💡",
+        safety: "extreme"
+    },
+    "In+Sb": {
+        result: "Indium Antimonida",
+        formula: "InSb",
+        desc: "Semikonduktor infrared dan magnetoresistor.",
+        image: "📡",
+        safety: "warning"
+    },
+    "Sn+O": {
+        result: "Timah Oksida",
+        formula: "SnO₂",
+        desc: "Politur dan keramik konduktif.",
+        image: "💎",
+        safety: "safe"
+    },
+    "Pb+Cl": {
+        result: "Timbal Klorida",
+        formula: "PbCl₂",
+        desc: "Beracun, sedikit larut dalam air.",
+        image: "💀",
+        safety: "extreme"
+    },
+
+    // ==================== REAKSI METALOID BARU ====================
+    "B+N": {
+        result: "Boron Nitrida",
+        formula: "BN",
+        desc: "Lubrikant dan material tahan panas.",
+        image: "🛡️",
+        safety: "safe"
+    },
+    "Si+C": {
+        result: "Silikon Karbida",
+        formula: "SiC",
+        desc: "Carborundum, abrasif sangat keras.",
+        image: "💎",
+        safety: "safe"
+    },
+    "Ge+O": {
+        result: "Germanium Oksida",
+        formula: "GeO₂",
+        desc: "Serat optik dan katalis.",
+        image: "📡",
+        safety: "warning"
+    },
+    "As+F": {
+        result: "Arsen Trifluorida",
+        formula: "AsF₃",
+        desc: "SANGAT BERACUN! Cairan tak berwarna.",
+        image: "☠️",
+        safety: "extreme"
+    },
+    "Sb+Cl": {
+        result: "Antimon Klorida",
+        formula: "SbCl₃",
+        desc: "Katalis dan fire retardant. Beracun!",
+        image: "🔥",
+        safety: "danger"
+    },
+    "Te+Cl": {
+        result: "Telurium Klorida",
+        formula: "TeCl₄",
+        desc: "Reagen dalam sintesis organik.",
+        image: "🧪",
+        safety: "danger"
+    },
+
+    // ==================== REAKSI HALOGEN BARU ====================
+    "F+Cl": {
+        result: "Klor Trifluorida",
+        formula: "ClF₃",
+        desc: "SANGAT REAKTIF! Membakar pasir dan kaca. 'SETAN CAIR'!",
+        image: "😈",
+        safety: "extreme"
+    },
+    "Br+Cl": {
+        result: "Brom Monoklorida",
+        formula: "BrCl",
+        desc: "Reagen brominasi, sangat reaktif.",
+        image: "⚡",
+        safety: "extreme"
+    },
+    "I+Cl": {
+        result: "Iod Monoklorida",
+        formula: "ICl",
+        desc: "Reagen iodinasi, korosif.",
+        image: "🧪",
+        safety: "danger"
+    },
+
+    // ==================== REAKSI GAS MULIA BARU ====================
+    "Xe+O+F": {
+        result: "Xenon Oksitetrafluorida",
+        formula: "XeOF₄",
+        desc: "Senyawa gas mulia yang eksotis.",
+        image: "🔬",
+        safety: "extreme"
+    },
+    "Rn+O": {
+        result: "Radon Oksida",
+        formula: "RnO₃",
+        desc: "SANGAT RADIOAKTIF! Hanya teori.",
+        image: "☢️",
+        safety: "extreme"
+    },
+
+    // ==================== REAKSI LANTHANIDA BARU ====================
+    "La+O": {
+        result: "Lantanum Oksida",
+        formula: "La₂O₃",
+        desc: "Kaca optik dan katalis.",
+        image: "👓",
+        safety: "warning"
+    },
+    "Ce+O": {
+        result: "Serium Oksida",
+        formula: "CeO₂",
+        desc: "Politur kaca dan katalis converter.",
+        image: "🚗",
+        safety: "safe"
+    },
+    "Pr+O": {
+        result: "Praseodimium Oksida",
+        formula: "Pr₆O₁₁",
+        desc: "Pigmen kuning untuk keramik.",
+        image: "🎨",
+        safety: "safe"
+    },
+    "Nd+O": {
+        result: "Neodimium Oksida",
+        formula: "Nd₂O₃",
+        desc: "Laser dan magnet kuat.",
+        image: "🧲",
+        safety: "safe"
+    },
+    "Sm+O": {
+        result: "Samarium Oksida",
+        formula: "Sm₂O₃",
+        desc: "Katalis dan keramik.",
+        image: "⚗️",
+        safety: "safe"
+    },
+    "Eu+O": {
+        result: "Europium Oksida",
+        formula: "Eu₂O₃",
+        desc: "Fosfor merah untuk TV dan lampu.",
+        image: "📺",
+        safety: "safe"
+    },
+    "Gd+O": {
+        result: "Gadolinium Oksida",
+        formula: "Gd₂O₃",
+        desc: "Agent kontras MRI dan neutron capture.",
+        image: "🏥",
+        safety: "warning"
+    },
+    "Tb+O": {
+        result: "Terbium Oksida",
+        formula: "Tb₄O₇",
+        desc: "Fosfor hijau untuk lampu.",
+        image: "💡",
+        safety: "safe"
+    },
+    "Dy+O": {
+        result: "Disprosium Oksida",
+        formula: "Dy₂O₃",
+        desc: "Keramik dan lampu metal halide.",
+        image: "💡",
+        safety: "safe"
+    },
+    "Ho+O": {
+        result: "Holmium Oksida",
+        formula: "Ho₂O₃",
+        desc: "Pewarna kaca dan laser.",
+        image: "🎨",
+        safety: "safe"
+    },
+    "Er+O": {
+        result: "Erbium Oksida",
+        formula: "Er₂O₃",
+        desc: "Serat optik dan laser kedokteran.",
+        image: "📡",
+        safety: "safe"
+    },
+    "Tm+O": {
+        result: "Tulium Oksida",
+        formula: "Tm₂O₃",
+        desc: "Sumber radiasi portable.",
+        image: "🩺",
+        safety: "warning"
+    },
+    "Yb+O": {
+        result: "Iterbium Oksida",
+        formula: "Yb₂O₃",
+        desc: "Keramik dan stainless steel.",
+        image: "⚙️",
+        safety: "safe"
+    },
+    "Lu+O": {
+        result: "Lutesium Oksida",
+        formula: "Lu₂O₃",
+        desc: "Katalis cracking minyak.",
+        image: "🛢️",
+        safety: "safe"
+    },
+
+    // ==================== REAKSI AKTINIDA BARU ====================
+    "Ac+O": {
+        result: "Aktinium Oksida",
+        formula: "Ac₂O₃",
+        desc: "SANGAT RADIOAKTIF! Sumber neutron.",
+        image: "☢️",
+        safety: "extreme"
+    },
+    "Th+Cl": {
+        result: "Torium Klorida",
+        formula: "ThCl₄",
+        desc: "RADIOAKTIF! Untuk lampu gas mantel.",
+        image: "💡",
+        safety: "extreme"
+    },
+    "Pa+Cl": {
+        result: "Protaktinium Klorida",
+        formula: "PaCl₅",
+        desc: "SANGAT RADIOAKTIF DAN LANGKA!",
+        image: "⚛️",
+        safety: "extreme"
+    },
+    "Np+O": {
+        result: "Neptunium Oksida",
+        formula: "NpO₂",
+        desc: "Bahan bakar nuklir alternatif.",
+        image: "⚛️",
+        safety: "extreme"
+    },
+    "Am+O": {
+        result: "Amerisium Oksida",
+        formula: "AmO₂",
+        desc: "Sumber ionisasi detektor asap.",
+        image: "🚬",
+        safety: "extreme"
+    },
+    "Cm+O": {
+        result: "Curium Oksida",
+        formula: "Cm₂O₃",
+        desc: "Sumber panas untuk satelit.",
+        image: "🛰️",
+        safety: "extreme"
+    },
+
+    // ==================== REAKSI LOGAM BERAT BARU ====================
+    "Hg+Cl": {
+        result: "Merkuri Klorida",
+        formula: "HgCl₂",
+        desc: "SANGAT BERACUN! Desinfektan dan fungisida.",
+        image: "💀",
+        safety: "extreme"
+    },
+    "Tl+Cl": {
+        result: "Talium Klorida",
+        formula: "TlCl",
+        desc: "RACUN TIKUS MEMATIKAN! Tak berbau dan tak berasa.",
+        image: "🐀",
+        safety: "extreme"
+    },
+    "Bi+O": {
+        result: "Bismut Oksida",
+        formula: "Bi₂O₃",
+        desc: "Pigmen dan kosmetik. Relatif aman.",
+        image: "💄",
+        safety: "safe"
+    },
+
+    // ==================== REAKSI SULFIDA BARU ====================
+    "Mo+S": {
+        result: "Molibdenum Disulfida",
+        formula: "MoS₂",
+        desc: "Lubrikant padat (Molybdenum disulfide).",
+        image: "⚙️",
+        safety: "safe"
+    },
+    "W+S": {
+        result: "Tungsten Disulfida",
+        formula: "WS₂",
+        desc: "Lubrikant suhu tinggi.",
+        image: "🔥",
+        safety: "safe"
+    },
+    "Re+S": {
+        result: "Renium Disulfida",
+        formula: "ReS₂",
+        desc: "Katalis dan semikonduktor.",
+        image: "⚗️",
+        safety: "warning"
+    },
+
+    // ==================== REAKSI HIDRIDA BARU ====================
+    "B+H": {
+        result: "Diborana",
+        formula: "B₂H₆",
+        desc: "Gas sangat mudah terbakar dan beracun.",
+        image: "🔥",
+        safety: "extreme"
+    },
+    "Si+H": {
+        result: "Silana",
+        formula: "SiH₄",
+        desc: "Gas piroforik untuk semikonduktor.",
+        image: "💨",
+        safety: "extreme"
+    },
+    "Ge+H": {
+        result: "Germana",
+        formula: "GeH₄",
+        desc: "Gas beracun untuk deposisi germanium.",
+        image: "☠️",
+        safety: "extreme"
+    },
+
+    // ==================== REAKSI KARBIDA BARU ====================
+    "B+C": {
+        result: "Boron Karbida",
+        formula: "B₄C",
+        desc: "Material armor dan abrasif.",
+        image: "🛡️",
+        safety: "safe"
+    },
+    "Ti+C": {
+        result: "Titanium Karbida",
+        formula: "TiC",
+        desc: "Coating tool yang sangat keras.",
+        image: "🛠️",
+        safety: "safe"
+    },
+    "W+C": {
+        result: "Tungsten Karbida",
+        formula: "WC",
+        desc: "Material cutting tool super keras.",
+        image: "⚒️",
+        safety: "safe"
+    },
+
+    // ==================== REAKSI NITRIDA BARU ====================
+    "Al+N": {
+        result: "Aluminium Nitrida",
+        formula: "AlN",
+        desc: "Substrat semikonduktor dan keramik.",
+        image: "💎",
+        safety: "safe"
+    },
+    "Ti+N": {
+        result: "Titanium Nitrida",
+        formula: "TiN",
+        desc: "Coating emas untuk peralatan.",
+        image: "✨",
+        safety: "safe"
+    },
+    "Zr+N": {
+        result: "Zirkonium Nitrida",
+        formula: "ZrN",
+        desc: "Coating dekoratif dan protektif.",
+        image: "🛡️",
+        safety: "safe"
+    },
+
+    // ==================== REAKSI FOSFIDA BARU ====================
+    "Ga+P": {
+        result: "Gallium Fosfida",
+        formula: "GaP",
+        desc: "Semikonduktor untuk LED merah dan hijau.",
+        image: "💡",
+        safety: "warning"
+    },
+    "In+P": {
+        result: "Indium Fosfida",
+        formula: "InP",
+        desc: "Semikonduktor high-frequency.",
+        image: "📡",
+        safety: "warning"
+    },
+
+    // ==================== REAKSI LOGAM TRANSISI LANJUTAN ====================
+    "Zr+O": {
+        result: "Zirkonia",
+        formula: "ZrO₂",
+        desc: "Keramik gigi dan pisau.",
+        image: "🦷",
+        safety: "safe"
+    },
+    "Nb+O": {
+        result: "Niobium Oksida",
+        formula: "Nb₂O₅",
+        desc: "Lensa kamera dan katalis.",
+        image: "📷",
+        safety: "safe"
+    },
+    "Ru+O": {
+        result: "Rutenium Oksida",
+        formula: "RuO₂",
+        desc: "Elektroda dan resistor thick-film.",
+        image: "⚡",
+        safety: "warning"
+    },
+    "Rh+O": {
+        result: "Rodium Oksida",
+        formula: "Rh₂O₃",
+        desc: "Katalis converter mobil.",
+        image: "🚗",
+        safety: "warning"
+    },
+    "Pd+O": {
+        result: "Paladium Oksida",
+        formula: "PdO",
+        desc: "Katalis hydrogenasi.",
+        image: "⚗️",
+        safety: "warning"
+    },
+    "Ag+O": {
+        result: "Perak Oksida",
+        formula: "Ag₂O",
+        desc: "Electrode baterai silver-oxide.",
+        image: "🔋",
+        safety: "safe"
+    },
+    "Cd+O": {
+        result: "Kadmium Oksida",
+        formula: "CdO",
+        desc: "SANGAT BERACUN! Semikonduktor.",
+        image: "💀",
+        safety: "extreme"
+    },
+
+    // ==================== REAKSI GAS MULIA EKSPERIMENTAL ====================
+    "Ar+F": {
+        result: "Argon Fluorohidrida",
+        formula: "HArF",
+        desc: "Senyawa argon pertama yang ditemukan (2000).",
+        image: "🔬",
+        safety: "extreme"
+    },
+    "Kr+O": {
+        result: "Kripton Oksida",
+        formula: "KrO",
+        desc: "Sangat tidak stabil, hanya teori.",
+        image: "⚛️",
+        safety: "extreme"
+    },
+
+   
+
 };
 
 // =========================================================================

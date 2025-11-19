@@ -96,7 +96,7 @@ function setupEventListeners() {
 }
 
 // ----------------------------------------------------
-// PREFIX MATCH SEARCH SYSTEM (VERSI BARU)
+// PENCARIAN (PREFIX MATCH VERSION)
 // ----------------------------------------------------
 function searchElements(query) {
     if (!query) {
@@ -108,7 +108,6 @@ function searchElements(query) {
     displaySearchResults(results, query);
 }
 
-// Fungsi pencarian prefix
 function performSearch(query) {
     const searchTerm = query.toLowerCase();
 
@@ -121,7 +120,6 @@ function performSearch(query) {
     }).sort((a, b) => {
         const aSymbol = a.symbol.toLowerCase().startsWith(searchTerm);
         const bSymbol = b.symbol.toLowerCase().startsWith(searchTerm);
-
         const aName = a.name.toLowerCase().startsWith(searchTerm);
         const bName = b.name.toLowerCase().startsWith(searchTerm);
 
@@ -134,12 +132,10 @@ function performSearch(query) {
     });
 }
 
-// Tampilkan hasil pencarian (sembunyikan elemen lain)
 function displaySearchResults(results, query) {
     const tableContainer = document.getElementById('periodicTable');
     const allElements = tableContainer.querySelectorAll('.element');
 
-    // Reset tampilan
     allElements.forEach(el => {
         el.classList.remove('highlighted');
         el.style.opacity = '1';
@@ -162,7 +158,6 @@ function displaySearchResults(results, query) {
         msg.textContent = `Tidak ditemukan unsur yang diawali dengan "${query}"`;
 
     } else {
-        // tampilkan hanya hasil yang cocok
         allElements.forEach(el => {
             if (!el.classList.contains('empty')) {
                 const symbol = el.getAttribute('data-symbol');
@@ -179,7 +174,6 @@ function displaySearchResults(results, query) {
     showSearchInfo(results.length, query);
 }
 
-// Info hasil pencarian
 function showSearchInfo(count, query) {
     let info = document.querySelector('.search-info');
     if (!info) {
@@ -198,7 +192,6 @@ function showSearchInfo(count, query) {
     }
 }
 
-// Clear pencarian
 function clearSearch() {
     const tableContainer = document.getElementById('periodicTable');
     const allElements = tableContainer.querySelectorAll('.element');
@@ -217,34 +210,42 @@ function clearSearch() {
 }
 
 // ----------------------------------------------------
-// Interaksi utama (select element, campur, reset)
+// FUNGSI SELECT ELEMENT (VERSI BARU SESUAI PERMINTAAN)
 // ----------------------------------------------------
 function selectElement(symbol) {
     const element = elements.find(el => el.symbol === symbol);
-    if (!element) return;
 
-    showElementInfo(element);
+    const alreadySelected = selectedElements.includes(symbol);
 
-    // Reset pencarian
+    if (alreadySelected) {
+        selectedElements = selectedElements.filter(item => item !== symbol);
+
+        showWelcomeMessage(); // hapus panel detail kalau dibatalkan
+    } else {
+        if (selectedElements.length < 2) {
+            selectedElements.push(symbol);
+        } else {
+            selectedElements[0] = symbol;
+        }
+
+        if (element) {
+            showElementInfo(element);
+        }
+    }
+
     clearSearch();
     document.getElementById('elementSearch').value = '';
     document.getElementById('clearSearch').style.display = 'none';
     currentSearchQuery = '';
-
-    const already = selectedElements.includes(symbol);
-
-    if (already) {
-        selectedElements = selectedElements.filter(s => s !== symbol);
-    } else {
-        if (selectedElements.length < 2) selectedElements.push(symbol);
-        else selectedElements[0] = symbol;
-    }
 
     updateSubstanceSlots();
     updateMixButton();
     highlightSelectedElements();
 }
 
+// ----------------------------------------------------
+// PANEL INFORMASI
+// ----------------------------------------------------
 function showElementInfo(element) {
     const welcomeMessage = document.getElementById('welcomeMessage');
     const elementDetails = document.getElementById('elementDetails');
@@ -265,11 +266,20 @@ function showElementInfo(element) {
 }
 
 function showWelcomeMessage() {
-    document.getElementById('welcomeMessage').style.display = 'block';
-    document.getElementById('elementDetails').style.display = 'none';
-    document.getElementById('reactionResult').style.display = 'none';
+    const welcomeMessage = document.getElementById('welcomeMessage');
+    const elementDetails = document.getElementById('elementDetails');
+    const reactionResult = document.getElementById('reactionResult');
+
+    elementDetails.style.display = 'none';
+    reactionResult.style.display = 'none';
+    welcomeMessage.style.display = 'block';
+
+    currentElement = null;
 }
 
+// ----------------------------------------------------
+// SUBSTANCE SLOTS + SELECTION
+// ----------------------------------------------------
 function updateSubstanceSlots() {
     const s1 = document.getElementById('substance1');
     const s2 = document.getElementById('substance2');
@@ -304,6 +314,9 @@ function highlightSelectedElements() {
     });
 }
 
+// ----------------------------------------------------
+// CAMPUR UNSUR
+// ----------------------------------------------------
 function mixElements() {
     if (selectedElements.length !== 2) return;
 
@@ -360,6 +373,9 @@ function showReactionResult(elem1, elem2, reaction) {
     }
 }
 
+// ----------------------------------------------------
+// RESET
+// ----------------------------------------------------
 function resetSelection() {
     selectedElements = [];
     currentElement = null;
