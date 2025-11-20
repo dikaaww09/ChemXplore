@@ -202,7 +202,7 @@ header p {
     text-align: center;
     background: white;
     min-width: 40px;
-    position: relative; /* Untuk positioning checkmark */
+    position: relative; /* Untuk positioning  checkmark */
 }
 
 .element:hover {

@@ -1315,7 +1315,7 @@ const reactions = {
         safety: "safe"
     },
 
-    // ==================== REAKSI FOSFIDA BARU ====================
+    // ==================== REAKSI FOSFIDA BARU ===================
     "Ga+P": {
         result: "Gallium Fosfida",
         formula: "GaP",
